@@ -1,0 +1,36 @@
+.form-group {
+    width: 5cm;
+}
+.card{
+    margin-left: 12cm;
+    /* border:1px solid white; */
+    width:10cm;
+    margin-top: 1cm;
+}
+
+    h3{
+        margin-left: 3cm; 
+        
+    }
+.card-body{
+        margin-left: 1cm;
+        
+    }
+    #email{
+         width: 250px;
+        border-radius: 15px;
+        outline: 0;
+        padding: 7px;
+    }
+ #psw{ 
+     width: 250px;
+            border-radius: 15px;
+            outline: 0;
+            padding: 7px;
+        }
+#name{ 
+    width: 250px;
+            
+                border-radius: 15px;
+                outline: 0;
+                padding: 7px;}

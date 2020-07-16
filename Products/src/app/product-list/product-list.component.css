@@ -1,0 +1,13 @@
+.card-body{
+    background-color: #2d5ce7;
+}
+.card-header{
+    background-color: rgb(78, 109, 247);
+    font-weight: bold;
+}
+td {
+        
+    color: whitesmoke;
+   
+    /* background-color: #2d5ce7; */
+} 

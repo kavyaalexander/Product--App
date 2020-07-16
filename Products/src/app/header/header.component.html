@@ -1,0 +1,11 @@
+
+<h1>{{title}}</h1>
+<div class="card-header">
+    <a routerLink="/" class="btn btn-outline-danger" routerLinkActive="active" >Products</a>
+    <a routerLink="/add" class="btn btn-outline-danger" style='margin-left:1cm;'routerLinkActive="active">Add Product</a>
+    <a routerLink="/updatedelete" class="btn btn-outline-danger" style='margin-left:1cm;'routerLinkActive="active">Update/Delete</a>
+    <a routerLink="/signup" *ngIf="!productService.loggedIn()" class="btn btn-outline-danger" style="margin-left:18cm;"routerLinkActive="active">Sign Up</a>
+    <a routerLink="/login"  *ngIf="!productService.loggedIn()" class="btn btn-outline-danger" style="margin-left:1cm;"routerLinkActive="active">Login</a>
+    <a  class="btn btn-outline-danger" *ngIf="productService.loggedIn()" style="margin-left:20cm;color:rgb(255, 242, 240)"routerLinkActive="active" (click)="productService.logoutUser()">Logout</a>
+
+</div>

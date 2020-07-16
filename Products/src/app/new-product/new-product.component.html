@@ -1,0 +1,54 @@
+<div class="card">
+    <form #userLogin="ngForm" (ngSubmit)="AddProduct()">
+        <div class="card-header">
+            {{title}}
+        </div>
+        <div class="card-body">
+            <div class="table-responsive">
+                <table class="table">
+                    <tbody>
+                        <tr>
+
+                            <td> <label>Product Id</label></td>
+                            <td><input type="text" name="p_id" id="pdt"[(ngModel)]="productItem.productId" required /></td>
+                        </tr>
+                        <tr>
+                            <td> <label>Product Name</label></td>
+                            <td><input type="text" name="p_name"id="pdt" [(ngModel)]="productItem.productName"required /></td>
+                        </tr>
+                        <tr>
+                            <td> <label>Product Code</label></td>
+                            <td><input type="text" name="p_code"id="pdt" [(ngModel)]="productItem.productCode"required /></td>
+                        </tr>
+                        <tr>
+                            <td> <label>Product Date</label></td>
+                            <td><input type="text" name="p_date" id="pdt"[(ngModel)]="productItem.releaseDate"required /></td>
+                        </tr>
+                        <tr>
+                            <td> <label>Product Description</label></td>
+                            <td><input type="text" name="p_desc"id="pdt" [(ngModel)]="productItem.description"required /></td>
+                        </tr>
+                        <tr>
+                            <td> <label>Product Price</label></td>
+                            <td><input type="number" name="p_price"id="pdt" [(ngModel)]="productItem.price" required/></td>
+                        </tr>
+                        <tr>
+                            <td> <label>Product starRating</label></td>
+                            <td><input type="number" name="p_rating" id="pdt"[(ngModel)]="productItem.starRating" required/></td>
+                        </tr>
+                        <tr>
+                            <td> <label>Product imageUrl</label></td>
+                            <td><input type="text" name="p_image" id="pdt"[(ngModel)]="productItem.imageUrl"required /></td>
+                        </tr>
+                        <tr>
+
+                            <td></td>
+                            <td><input type="submit" [disabled]="userLogin.form.invalid" class="btn btn-danger" style="margin-left: 2cm;" value="Submit" /></td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </form>
+</div>
